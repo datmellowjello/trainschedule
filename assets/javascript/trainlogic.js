@@ -26,6 +26,21 @@ $(document).ready(function() {
 
         var frequencyInput = $("#freq-input").val().trim();
 
+        var newTrain = {
+            name: trainName,
+            destination: destinationInput,
+            firstTrain: firstTrain,
+            frequency: frequencyInput,
+        };
+
+        trainData.ref().push(newTrain);
+
+        $("#freq-input").empty();
+        $("#train-name-input").empty();
+        $("#dest-name-input").empty();
+        $("#first-train-input").empty();
+
+
       })
 
 
