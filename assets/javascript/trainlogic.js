@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
     console.log( "ready!" );
 
     var firebaseConfig = {
@@ -13,7 +13,7 @@ $( document ).ready(function() {
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
      
-      
+
 
 
 
