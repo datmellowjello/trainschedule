@@ -13,8 +13,20 @@ $(document).ready(function() {
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
      
+      var trainData = firebase.database();
 
+      $("#add-train").on("click", function(event) {
+        event.preventDefault();
 
+        var trainName = $("#train-name-input").val().trim();
+
+        var destinationInput = $("#dest-name-input").val().trim();
+
+        var firstTime = $("#first-train-input").val().trim();
+
+        var frequencyInput = $("#freq-input").val().trim();
+
+      })
 
 
 });
